@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Freelance Photographer Portfolio</title>
+    <style>
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .services-list, .contact-form {
+            margin-top: 20px;
+        }
+        .footer-text {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Photographer's Portfolio</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact" role="button">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="grid">
+                <img src="https://source.unsplash.com/random/800x600" alt="Gallery Image 1" class="gallery-image" />
+                <img src="https://source.unsplash.com/random/800x601" alt="Gallery Image 2" class="gallery-image" />
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <div class="services-list">
+                <p>Event Photography</p>
+                <p>Portrait Sessions</p>
+                <p>Commercial Photography</p>
+                <!-- Add more services as needed -->
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I'm [Your Name], a passionate photographer with a love for capturing life's most beautiful moments. My journey in photography started [brief history]...</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" required />
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="container">
+        <p class="footer-text">
+            <small><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></small>
+        </p>
+    </footer>
+</body>
+</html>
